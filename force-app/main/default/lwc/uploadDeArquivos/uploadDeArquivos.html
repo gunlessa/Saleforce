@@ -1,0 +1,17 @@
+<template>
+    <div class="slds-align_absolute-center slds-card slds-var-p-around_xxx-small" style="height:5rem">
+        <div class="alinhamento">
+            <h2>Anexador de arquivos</h2>
+        </div>
+        <div class="upload">
+            <lightning-file-upload
+                label="Anexe um arquivo aqui: "
+                name="fileUploader"
+                accept={acceptedFormats}
+                record-id={myRecordId}
+                onuploadfinished={handleUploadFinished}
+                multiple>
+            </lightning-file-upload>
+        </div>
+    </div>
+</template>
