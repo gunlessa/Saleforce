@@ -1,7 +1,8 @@
-import { LightningElement, api } from 'lwc';
+import { LightningElement, api, wire } from 'lwc';
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
 export default class FileUploadExample extends LightningElement {
     @api myRecordId;
+    @api limit = false;  //variável para o tamanho limite aceitável
 
     get acceptedFormats() {
         // Type of files accepted
@@ -17,4 +18,9 @@ export default class FileUploadExample extends LightningElement {
         });
         this.dispatchEvent(show);
     }
+
+    if (condition) {
+        limit = true;
+    }
+
 }
