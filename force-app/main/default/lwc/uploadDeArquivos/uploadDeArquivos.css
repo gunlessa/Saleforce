@@ -14,8 +14,10 @@ h2 {
 }
 
 .arquivoMuitoGrande {
+    border-radius: 5px;
     background-color: rgb(226, 43, 43);
     color: white;
     text-align: center;
-    height: 25%;
+    height: 5%;
+    margin-bottom: 0.5%;
 }

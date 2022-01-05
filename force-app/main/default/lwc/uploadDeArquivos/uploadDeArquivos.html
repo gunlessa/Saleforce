@@ -1,8 +1,10 @@
 <template>
-    <div class="arquivoMuitoGrande slds-card" if:true={limit}>
+    <template if:false={limit}>
+    <div class="arquivoMuitoGrande">
         <p>Arquivo maior do que 5MB! Por favor Escolha um arquivo menor!</p>
     </div>
-    <div class="slds-align_absolute-center slds-card slds-var-p-around_xxx-small" style="height:5rem">
+</template>
+    <div class="slds-align_absolute-center slds-card slds-var-p-around_xxx-small">
         <div class="alinhamento">
             <h2>Anexador de arquivos</h2>
         </div>
