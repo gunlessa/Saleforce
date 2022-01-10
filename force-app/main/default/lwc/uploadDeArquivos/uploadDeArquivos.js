@@ -1,11 +1,12 @@
 import { LightningElement, api, wire } from 'lwc';
 import { ShowToastEvent } from 'lightning/platformShowToastEvent';
-import fileSizeLimit from '@salesforce/apex/createCaseWithFile.createAssociatedCaseWithFile';
+//import fileSettingsMethod from '@salesforce/apex/createCaseWithFile.fileSettingsMethod';
+
 export default class FileUploadExample extends LightningElement {
     @api myRecordId;
     //@wire (createAssociatedCaseWithFile, {lstContentDocument})
     limit = false;  //variável para o tamanho limite aceitável
-    //size = 0;
+    //teste = [];
 
     get acceptedFormats() {
         // Type of files accepted
@@ -26,7 +27,8 @@ export default class FileUploadExample extends LightningElement {
         limit = true;
     }
 
-    /*createAssociatedCaseWithFile(){
-        size: this.ContentSize;
+/* fileSettingsMethod(){
+        teste: this.fileSizeLimit.lstFileSettings;
+        console.log('teste >> :GN: ', teste);
     }*/
 }

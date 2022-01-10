@@ -36,4 +36,10 @@ public with sharing class createCaseWithFile {
             }
         }
     }
+
+    /*@AuraEnabled(cacheable=true)
+    public static List<ContentDocument> fileSettingsMethod(List<ContentDocumentLink> lstContentDocument){
+        List<ContentDocument> lstFileSettings = new List<ContentDocument>();
+        lstFileSettings = [SELECT ContentSize FROM ContentDocument WHERE Id IN: lstValidDocLinkId];
+    }*/
 }
